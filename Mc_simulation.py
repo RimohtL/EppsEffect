@@ -155,13 +155,6 @@ params = np.array([T, s0[0], s0[1], eta[0], eta[1], A[0], A[1],
 # run simulation
 rho, s = run_simulation(params, h)
 
-plt.figure()
-plt.plot(s[:T])
-plt.show()
-plt.figure()
-plt.plot(s[T:])
-plt.show()
-
 # display correlation
 ind = int(len(rho) / scale_factor)
 plt.figure()
